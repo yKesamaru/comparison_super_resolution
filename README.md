@@ -17,6 +17,12 @@
   - [出力結果](#出力結果)
   - [感想](#感想)
 
+https://zenn.dev/ykesamaru/articles/86ace66f116553
+
+https://zenn.dev/ykesamaru/articles/35f05023d537c2
+
+https://zenn.dev/ykesamaru/articles/fae6f5f30e5522
+
 
 ## 元画像
 ![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/tmp/processed_1.png)
