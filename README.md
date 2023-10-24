@@ -16,6 +16,11 @@
   - [元画像](#元画像)
   - [出力結果](#出力結果)
   - [感想](#感想)
+  - [追加実験：2023年10月24日](#追加実験2023年10月24日)
+    - [元画像](#元画像-1)
+    - [SRGAN](#srgan)
+    - [GFPGAN](#gfpgan)
+    - [VQFR](#vqfr)
 
 https://zenn.dev/ykesamaru/articles/86ace66f116553
 
@@ -46,7 +51,8 @@ SRGANにくらべ、GFPGANとVQFRは顔に特化している分、顔の拡大�
 
 GFPGANが元画像を忠実に超解像しているのに対し、VQFRでは顔が変わってしまっています。
 また、両者ともに、はっきりした二重瞼を「創作」する傾向がありそうです。
-このようなハルシネーションを起こさないSRGANを選択する、というのも一つの手かもしれません。
+~~このようなハルシネーションを起こさないSRGANを選択する、というのも一つの手かもしれません。~~
+（SRGANもハルシネーションを起こします。`追加実験2023年10月24日`を参照して下さい。）
 
 ![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/g2044.png)
 
@@ -55,3 +61,38 @@ GFPGANが元画像を忠実に超解像しているのに対し、VQFRでは顔�
 入力画像サイズについて、両者ともREADMEに記載がないので、注意が必要です。
 
 以上です。ありがとうございました。
+
+## 追加実験：2023年10月24日
+SRGAN, GFPGAN, VQFRの3つの超解像技術において、元画像がどのような劣化（ぼかし）を受けているかにより、出力結果が変わることを確認しました。
+
+### 元画像
+- BLUR
+  - ![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/original_blur_1.png)
+- FILM
+  - ![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/original_film_2.png)
+- MOSAIC
+  - ![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/original_mosaic_3.png)
+
+### SRGAN
+- BLUR
+  - ![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/SRGAN_BLUR.png)
+- FILM
+  - ![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/SRGAN_FILM.png)
+- MOSAIC
+  - ![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/SRGAN_MOSAIC.png)
+
+### GFPGAN
+- BLUR
+  - ![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/GFPGAN_BLUR.png)
+- FILM
+  - ![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/GFPGAN_FILM.png)
+- MOSAIC
+  - ![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/GFPGAN_MOSAIC.png)
+
+### VQFR
+- BLUR
+  - ![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/VQFR_BLUR.png)
+- FILM
+  - ![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/VQFR_FILM.png)
+- MOSAIC
+  - ![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/VQFR_MOSAIC.png)
