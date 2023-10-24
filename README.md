@@ -10,9 +10,14 @@
 
 今回は、MAX Image Resolution Enhancer（SRGAN）, GFPGAN, VQFRの3つの超解像技術を比較します。
 
+## 注意
+- 画像比較の性質上、PCでの閲覧を推奨します。
+- 大量の画像が存在するため、通信量が多くなります。
+
 ![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/eye_catch.png)
 
 - [画像拡大マスター：超解像セットアップシリーズ④ 超画像モデルの比較](#画像拡大マスター超解像セットアップシリーズ-超画像モデルの比較)
+  - [注意](#注意)
   - [元画像](#元画像)
   - [出力結果](#出力結果)
   - [感想](#感想)
@@ -96,3 +101,4 @@ SRGAN, GFPGAN, VQFRの3つの超解像技術において、元画像がどのよ
   - ![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/VQFR_FILM.png)
 - MOSAIC
   - ![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/VQFR_MOSAIC.png)
+
