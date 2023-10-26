@@ -109,6 +109,8 @@ SRGAN, GFPGAN, VQFRの3つの超解像技術において、元画像がどのよ
 よく映画やドラマで、監視カメラの映像を拡大して、犯人の顔を特定するシーンがあります。
 
 Blade Runner Enhance Scene
+（クリックして再生）
+
 [![](https://img.youtube.com/vi/qHepKd38pr0/0.jpg)](https://www.youtube.com/watch?v=qHepKd38pr0)
 
 このようなシーンをGFPGANにて再現してみました。
