@@ -26,6 +26,8 @@
     - [SRGAN](#srgan)
     - [GFPGAN](#gfpgan)
     - [VQFR](#vqfr)
+  - [追記：2023年10月26日](#追記2023年10月26日)
+    - [超解像の例](#超解像の例)
 
 https://zenn.dev/ykesamaru/articles/86ace66f116553
 
@@ -102,3 +104,23 @@ SRGAN, GFPGAN, VQFRの3つの超解像技術において、元画像がどのよ
 - MOSAIC
   - ![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/VQFR_MOSAIC.png)
 
+## 追記：2023年10月26日
+### 超解像の例
+よく映画やドラマで、監視カメラの映像を拡大して、犯人の顔を特定するシーンがあります。
+
+Blade Runner Enhance Scene
+[![](https://img.youtube.com/vi/qHepKd38pr0/0.jpg)](https://www.youtube.com/watch?v=qHepKd38pr0)
+
+このようなシーンをGFPGANにて再現してみました。
+[米メーン州で複数の銃撃事件 16人死亡、50人超けが 容疑者は逃走中](https://news.yahoo.co.jp/articles/5123f4bd1542e0cda54b545197f6436c65fef728)
+![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/2023-10-26_17-39.png)
+
+4倍で超解像した結果。
+![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/2023-10-26_17-39_done.png)
+![](https://raw.githubusercontent.com/yKesamaru/comparison_super_resolution/master/assets/2023-10-26_18-04.png)
+
+犯人の顔がくっきりと見えてきましたね。
+しかしながら、GFPGANは顔の特徴を「創作」する傾向があることが、この記事の実験で判明しています。
+そのため、GFPGANで特定した顔が、本当に犯人の顔として手配することは、非常に危険です。
+
+以上です。ありがとうございました。
